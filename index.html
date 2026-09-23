@@ -1,8 +1,9 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>跳转页面中....</title>
+	<meta http-equiv="refresh" content="3;url=https://blog.wpys.cc/">
 	<style>
 		body {margin:0;}
 		h1 {font-family:'Lato',sans-serif;font-weight:300;letter-spacing:2px;font-size:35px;}
@@ -30,8 +31,8 @@
 <body>
 	<div class="header">
 		<div class="inner-header flex">
-			<h1>您将在<span id="seconds">8</span>秒后进入博哥影视....</h1>
-			<a id="UrlId" href="https://blog.wpys.cc/">AQ影视合已并到博哥影视,请收藏</a>
+			<h1>您将在<span id="seconds">3</span>秒后进入博哥影视....</h1>
+			<a id="UrlId" href="https://blog.wpys.cc/">AQ影视合已并到博哥影视</a>
 		</div>
  
 		<!-- 背景 -->
@@ -59,15 +60,16 @@
 	
 	// 倒计时逻辑
 	var seconds = document.getElementById("seconds");
-	var num = 8;
+	var num = 3;
 	
 	var timer = setInterval(function () {
 		num--;
 		seconds.innerText = num;
 		
 		if (num <= 0) {
-			clearInterval(timer);  // 清除定时器
-			window.location.href = url;  // 跳转到 blog.wpys.cc		}
+			clearInterval(timer);
+			window.location.href = url;
+		}
 	}, 1000);
 	</script>
 </body>
